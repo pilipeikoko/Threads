@@ -12,7 +12,7 @@ namespace Threads
         int firstNumber;
         int secondNumber;
         int result;
-        public int rankToMultiply;
+        int rankToMultiply;
         public int Result
         {
             get
