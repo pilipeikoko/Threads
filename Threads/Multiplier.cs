@@ -11,8 +11,8 @@ namespace Threads
     {
         int firstNumber;
         int secondNumber;
+        int result;
         public int rankToMultiply;
-        public int result;
         public int Result
         {
             get
@@ -20,7 +20,6 @@ namespace Threads
                 return result;
             }
         }
-
 
         private object locker = new object();
 
