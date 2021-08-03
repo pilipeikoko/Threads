@@ -11,10 +11,14 @@ namespace Threads
         public static void Main(string[] args)
         {
             Task<int> b = PrintAsync();
-          //  Console.WriteLine(b.Result);
+          
             for(int i = 100; i < 200; ++i)
             {
                 Console.WriteLine(1);
+                if (i == 150)
+                {
+                    Console.WriteLine(b.Result);
+                }
             }
 
             Console.ReadLine();
